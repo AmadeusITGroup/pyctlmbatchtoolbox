@@ -1,11 +1,11 @@
 
 # Description
-`bapyctlmbatchtoolbox` is command line wrapper around [Control-M REST API](https://docs.bmc.com/docs/automation-api/918/services-783053199.html#Services-TopIntroduction). The goal is to provide a developer friendly 
+`pyctlmbatchtoolbox` is command line wrapper around [Control-M REST API](https://docs.bmc.com/docs/automation-api/918/services-783053199.html#Services-TopIntroduction). The goal is to provide a developer friendly 
 command line tool easy to integrate with other tools.
 
 # Install
 ```
-pip install bapyctlmbatchtoolbox --upgrade
+pip install pyctlmbatchtoolbox --upgrade
 ```
 
 # SRE toolbox included

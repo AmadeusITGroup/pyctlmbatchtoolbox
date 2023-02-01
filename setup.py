@@ -14,7 +14,7 @@ setuptools.setup(
     url="https://github.com/AmadeusITGroup/pyctlmbatchtoolbox",
     classifiers=[
         "Programming Language :: Python :: 3",
-        "License :: Amadeus",
+        "License :: OSI Approved :: BSD License",
         "Operating System :: OS Independent",
     ],
     packages=setuptools.find_packages(where="src"),
