@@ -38,7 +38,7 @@ class CommandDeploy(Command):
 
     def parse_arguments(self, sysargs, ctx):
         parser = argparse.ArgumentParser(description=self.description)
-        parser.add_argument('--controlm-server', dest='controlm_server', required=True, default=None, help="Ex: MUCACS1D, MUCCT4T")
+        parser.add_argument('--controlm-server', dest='controlm_server', required=True, default=None, help="Ex: CTMSERVER1,CTMSERVER2")
         parser.add_argument('--controlm-user', dest='controlm_user', required=False, default=None, help="")
         parser.add_argument('--controlm-password', dest='controlm_password', required=False, default=None, help="")
         parser.add_argument('--action', dest='action', required=False, default=ctx.action, help=f"GET. Default is {ctx.action}")

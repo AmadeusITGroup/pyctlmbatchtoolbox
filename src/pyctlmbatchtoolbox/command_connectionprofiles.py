@@ -29,7 +29,7 @@ class CommandConnectionProfile(Command):
 
     def parse_arguments(self, sysargs, ctx):
         parser = argparse.ArgumentParser(description=self.description)
-        parser.add_argument('--controlm-server', dest='controlm_server', required=True, default=None, help="Ex: MUCACS1D, MUCCT4T")
+        parser.add_argument('--controlm-server', dest='controlm_server', required=True, default=None, help="Ex: CTMSERVER1,CTMSERVER2")
         parser.add_argument('--controlm-user', dest='controlm_user', required=False, default=None, help="")
         parser.add_argument('--controlm-password', dest='controlm_password', required=False, default=None, help="")
         parser.add_argument('--agent', dest='agent', required=True, default=ctx.agent, help=f"Agent id used to retrieve connection profiles.")
