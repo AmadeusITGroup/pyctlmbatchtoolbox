@@ -13,7 +13,7 @@ Most of the tools include list/add/delete operations.
 
 Tools included:
 * batch_condition
-* batch_conditionprofile
+* batch_connectionprofile
 * batch_deploy
 * batch_hostgroup
 * batch_logs

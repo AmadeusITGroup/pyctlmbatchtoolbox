@@ -51,10 +51,15 @@ class CommandConnectionProfile(Command):
         Command.main(self, self.ctx)
 
         print(f'Getting connection profiles for ctm server {ctx.ctm_server} agent: {ctx.agent} type {ctx.type} ctm rest endpoint: {ctx.ctm_rest}' )
-        connection_profiles = get_connection_profiles(ctx.ctm_rest, ctx.token, ctx.ctm_server, ctx.agent, ctx.type)
-        for cp in connection_profiles:
-            print(f'Connection profile: {cp}: {connection_profiles[cp]}')
-        print(f'Coonnection profiles found: {len(connection_profiles)}')
+        response = get_connection_profiles(ctx.ctm_rest, ctx.token, ctx.ctm_server, ctx.agent, ctx.type)
+
+        # write connectio profile to file
+        filename = f'{ctx.ctm_server}-{ctx.agent}-connectionprofile.json'
+        print(f'Writting connection profiles for {ctx.ctm_server} {ctx.agent} on {filename}')
+        with open(filename, "w") as f:
+            f.write(response)
+        print(f'Done!')
+
         logging.info("Finish")
 
 def main():

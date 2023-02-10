@@ -237,8 +237,7 @@ def get_connection_profiles(url, token, server, agent, type):
     url = url + f'/deploy/connectionprofiles/local?ctm={server}&agent={agent}&type={type}'
     headers = {'Authorization': f'Bearer {token}'}
     response = execute_request('GET',url=url, headers=headers, verify=ssl_verify)
-    res = response.json()
-    return res
+    return response.text
 
 def get_controlm_deploy(url, token, server, folder=None, export_format_xml=False):
     """

@@ -5,7 +5,7 @@ with open("README.md", "r") as fh:
 
 setuptools.setup(
     name="pyctlmbatchtoolbox",
-    version="0.0.3",
+    version="0.0.4",
     author="Jose Morales Aragon",
     author_email="jmoralesaragon@users.noreply.github.com",
     description="Set of command line tools used to interact with Control-M.",
